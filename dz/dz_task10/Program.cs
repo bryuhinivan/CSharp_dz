@@ -2,7 +2,7 @@
 // и на выходе показывает вторую цифру этого числа.
 // 456 -> 5, 782 -> 8, 918 -> 1
 
-void FindSecondNumber()
+void FindSecondNumber() // метод типа void не возвращает никаких значений. FindSecondNumber() - название метода
 {
     Console.Clear();
     int number = new Random().Next(100, 1000);
@@ -14,4 +14,4 @@ void FindSecondNumber()
     double numberB = numberA % 10;
     Console.WriteLine("Вторая цифра трёхзначного числа: " + numberB);
 }
-FindSecondNumber();
+FindSecondNumber(); // тут идёт обращение к методу
