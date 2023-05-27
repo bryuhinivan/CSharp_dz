@@ -43,4 +43,9 @@ void FindLargestDigit(int num)
     }
 }
 int number = new Random().Next(10, 100);
+int number1 = new Random().Next(100);
+int number2 = new Random().Next(-80, 10);
 FindLargestDigit(number);
+FindLargestDigit(number1);
+FindLargestDigit(number2);
+
