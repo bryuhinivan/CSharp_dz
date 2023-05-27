@@ -6,6 +6,10 @@ int x1 = Prompt("Введите координаты X: ");
 int y1 = Prompt("Введите координаты Y: ");
 FindCoordinate(x1, y1);
 
+int x2 = Prompt("Введите координаты X: ");
+int y2 = Prompt("Введите координаты Y: ");
+FindCoordinate(x2, y2);
+
 int Prompt (string message)
 {
     Console.Write(message);
