@@ -5,24 +5,26 @@
 
 Console.Clear();
 
-string mess = "Введите число: ";
-int num = Prompt(mess);
-Console.Write($"Кол-во цифр в числе = {GetSumNums(num)}");
-
 int Prompt(string message)
 {
     Console.Write(message);
     int number = int.Parse(Console.ReadLine());
     return number;
 }
-int GetSumNums(int number)
+
+int CountDigit(int number)
 {
-    int count = 0; //количество цифр в числе
-    while (number > 0)
+    int count = 0;
+    while (number !=0) // всё, что меньше или равно 0 это false
     {
-        number /= 10; // A = A/10
-        count++;
+        number = number / 10;
+        count = count + 1;
+        // Console.Write (number + " ");
+        // Console.WriteLine (count + " ");
     }
+    // Console.WriteLine (count);
     return count;
 }
 
+int number = Prompt ("Введите число: ");
+Console.WriteLine($"Количество цифр в числе равно: {CountDigit(number)}");
