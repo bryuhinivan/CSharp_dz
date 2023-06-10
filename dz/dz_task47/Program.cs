@@ -26,9 +26,9 @@ void PrintArray(double[,] array)
         for (int j = 0; j < array.GetLength(1); j++) // GetLength(1) отвечает за столбцы
         {
             array[i, j] = new Random().Next(-999, 1000) / 10.0;
-            Console.Write($"{array[i, j]} |\t");
+            Console.Write($"{array[i, j]} |\t"); // разграничиваем значения вертикальным слешем |\t
         }
-        Console.WriteLine('\n');
+        Console.WriteLine('\n'); // '\n' перевод строки
     }
 }
 
